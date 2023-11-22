@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
     <header>
         <div id="header-contents">
-            <a href=""><span class="bisco-rogo"></span></a>
+            <a href="https://www.bisco.or.kr/"><span class="bisco-rogo"></span></a>
             <a href=""><h1 class="main-rogo"></h1></a>
-            <button>
+            <button class="hambutton active">
                 <span class="ham1"></span>
                 <span class="ham2"></span>
                 <span class="ham3"></span>
@@ -18,28 +21,37 @@
         </div>
     </header> 
     <section class="main-vidio">
-         <video src="img/메인영상.mp4" autoplay muted></video>
-         <div class="news">
-             <a href="">
-                 <p></p>
+        <video src="img/메인영상.mp4" autoplay muted></video>
+        <div class="news">
+            <p class="news-titel">NEWS</p>
+            <div class="news-list">
+                <a href="https://sports.donga.com/article/all/20230703/120057858/1">
+                    <p>부산시설공단 여자핸드볼선수단,<br>
+                        준우승 기념 깜짝 팬미팅 성료</p>
                 </a>
-                <a href="">
-                    <p></p>
+                <a href="https://www.gukjenews.com/news/articleView.html?idxno=2713537">
+                <p>“아쉽지만 잘 싸웠다”...부산시설공단,<br>
+                    핸드볼코리아리그 챔프전 ‘준우승’</p>
                 </a>
-                <a href="">
-                    <p></p>
+                <a href="https://v.daum.net/v/Y3K0WA0gla">
+                    <p>'알리나 9골' 부산시설공단,<br>
+                        SK핸드볼리그서 서울시청 제압</p>
                 </a>
-                <a href="">
-                    <p></p>
+                <a href="https://www.sportsw.kr/news/newsview.php?ncode=1065611159160787">
+                    <p>'이미경 펄펄' 부산시설공단,<br>
+                        인천시청 꺾고 핸드볼 코리아리그 2위 유지</p>
                 </a>
             </div>
+        </div>
     </section>
     <section id="game-schedule">
         <div class="today-game-place">
             <div class="today-game">
                 <p class="game-title">23-24 신한SOL Play 핸드볼코리아리그</p>
-                <p class="game-day">01월04일</p>
-                <p class="game-time">20:00</p>
+                <div class="day-and-time">
+                    <p class="game-day">01월04일</p>
+                    <p class="game-time">20:00</p>
+                </div>
                 <div class="match-teams">
                     <img src="img/메인ㄹ고.jpg" alt="">
                     <p>VS</p>
@@ -50,7 +62,7 @@
             </div> 
         </div>
         <div class="game-list">
-            <h2>2023-2024 신한SOL Play 핸드볼코리아리그</h2>
+            <h2>2023-2024 <span class="heading-bold">신한SOL Play 핸드볼코리아리그</span></h2>
             <ul>
                 <li class="information">
                     <div class="schedule">
@@ -72,7 +84,7 @@
                                 <p>SK핸드볼경기장</p>
                             </div>
                         </div>
-                        <div class="team ??? match-right">
+                        <div class="team sk match-right">
                             <img src="img/sk.png" alt="">
                             <p>SK슈가글라이더즈</p>
                         </div>
@@ -99,7 +111,7 @@
                                 <p>광명시민체육관</p>
                             </div>
                         </div>
-                        <div class="team ??? match-right">
+                        <div class="team daegu match-right">
                             <img src="img/대구.png" alt="">
                             <p>대구시청</p>
                         </div>
@@ -126,7 +138,7 @@
                                 <p>광명시민체육관</p>
                             </div>
                         </div>
-                        <div class="team ??? match-right">
+                        <div class="team seoul match-right">
                             <img src="img/서울.png" alt="">
                             <p>서울시청</p>
                         </div>
@@ -153,7 +165,7 @@
                                 <p>광명시민체육관</p>
                             </div>
                         </div>
-                        <div class="team ??? match-right">
+                        <div class="team incheon match-right">
                             <img src="img/인천.png" alt="">
                             <p>인천시청</p>
                         </div>
@@ -180,7 +192,7 @@
                                 <p>광명시민체육관</p>
                             </div>
                         </div>
-                        <div class="team ??? match-right">
+                        <div class="team gyeongnam match-right">
                             <img src="img/경남.png" alt="">
                             <p>경남개발공사</p>
                         </div>
@@ -207,7 +219,7 @@
                                 <p>부산기장체육관</p>
                             </div>
                         </div>
-                        <div class="team ??? match-right">
+                        <div class="team gwangju match-right">
                             <img src="img/광주.png" alt="">
                             <p>광주도시공사</p>
                         </div>
@@ -234,7 +246,7 @@
                                 <p>부산기장체육관</p>
                             </div>
                         </div>
-                        <div class="team ??? match-right">
+                        <div class="team samcheok match-right">
                             <img src="img/삼척.png" alt="">
                             <p>삼척시청</p>
                         </div>
@@ -261,7 +273,7 @@
                                 <p>부산기장체육관</p>
                             </div>
                         </div>
-                        <div class="team ??? match-right">
+                        <div class="team sk match-right">
                             <img src="img/sk.png" alt="">
                             <p>SK슈가글라이더즈</p>
                         </div>
@@ -288,7 +300,7 @@
                                 <p>부산기장체육관</p>
                             </div>
                         </div>
-                        <div class="team ??? match-right">
+                        <div class="team daegu match-right">
                             <img src="img/대구.png" alt="">
                             <p>대구시청</p>
                         </div>
@@ -315,7 +327,7 @@
                                 <p>SK핸드볼경기장</p>
                             </div>
                         </div>
-                        <div class="team ??? match-right">
+                        <div class="team gyeongnam match-right">
                             <img src="img/경남.png" alt="">
                             <p>경남개발공사</p>
                         </div>
@@ -342,7 +354,7 @@
                                 <p>SK핸드볼경기장</p>
                             </div>
                         </div>
-                        <div class="team ??? match-right">
+                        <div class="team incheon match-right">
                             <img src="img/인천.png" alt="">
                             <p>인천시청</p>
                         </div>
@@ -358,114 +370,195 @@
         <div class="players">
             <div class="player-photo">
                 <img src="img/이미경프로필.png" class="profile" alt="">
+                <div class="players-name">
+                    <p class="name">이미경</p>
+                    <p>CB</p>
+                    <p>no.</p>
+                    <p class="number">23</p>
+                </div>
             </div>
             <div class="player-photo">
                 <img src="img/조하랑프로필.png" class="profile" alt="">
+                <div class="players-name">
+                    <p class="name">조하랑</p>
+                    <p>LW</p>
+                    <p>no.</p>
+                    <p class="number">27</p>
+                </div>
             </div>
             <div class="player-photo">
                 <img src="img/김진이프로필.png" class="profile" alt="">
+                <div class="players-name">
+                    <p class="name">김진이</p>
+                    <p>LB</p>
+                    <p>no.</p>
+                    <p class="number">17</p>
+                </div>
             </div>
             <div class="player-photo">
                 <img src="img/이한솔프로필.png" class="profile" alt="">
+                <p class="name">이한솔</p>
+                <p>PV</p>
+                <p>no.</p>
+                <p class="number">08</p>
             </div>
             <div class="player-photo">
                 <img src="img/김다영프로필.png" class="profile" alt="">
+                <p class="name">김다영</p>
+                <p>LB</p>
+                <p>no.</p>
+                <p class="number">29</p>
             </div>
             <div class="player-photo">
                 <img src="img/함지선프로필.png" class="profile" alt="">
+                <p class="name">함지선</p>
+                <p>RW</p>
+                <p>no.</p>
+                <p class="number">03</p>
             </div>
             <div class="player-photo">
                 <img src="img/송해리프로필.png" class="profile" alt="">
+                <p class="name">송해리</p>
+                <p>PV</p>
+                <p>no.</p>
+                <p class="number">10</p>
             </div>
-        </div>
-        <div class="players">
             <div class="player-photo">
                 <img src="img/정가희프로필.png" class="profile" alt="">
+                <p class="name">정가희</p>
+                <p>LW</p>
+                <p>no.</p>
+                <p class="number">09</p>
             </div>
             <div class="player-photo">
                 <img src="img/김수연프로필.png" class="profile" alt="">
+                <p class="name">김수연</p>
+                <p>GK</p>
+                <p>no.</p>
+                <p class="number">86</p>
             </div>
             <div class="player-photo">
                 <img src="img/신진미프로필.png" class="profile" alt="">
+                <p class="name">신진미</p>
+                <p>CB</p>
+                <p>no.</p>
+                <p class="number">07</p>
                 </div>
             <div class="player-photo">
                 <img src="img/박시연프로필.png" class="profile" alt="">
+                <p class="name">박시연</p>
+                <p>RW</p>
+                <p>no.</p>
+                <p class="number">77</p>
             </div>
             <div class="player-photo">
                 <img src="img/이주현프로필.png" class="profile" alt="">
+                <p class="name">이주현</p>
+                <p>GK</p>
+                <p>no.</p>
+                <p class="number">16</p>
             </div>        
             <div class="player-photo">
-                <img src="img/이주현프로필.png" class="profile" alt="">
+                <img src="img/지은혜프로필.png" class="profile" alt="">
+                <p class="name">지은혜</p>
+                <p>RB</p>
+                <p>no.</p>
+                <p class="number">20</p>
             </div>
             <div class="player-photo">
                 <img src="img/홍주예프로필.png" class="profile" alt="">
+                <p class="name">홍주예</p>
+                <p>LW</p>
+                <p>no.</p>
+                <p class="number">13</p>
             </div>
         </div>
         <h3>Coaching staff</h3>
         <div class="Coaching-staff">
             <div class="staff-photo">
                 <img src="img/강재원감독.png" class="profile" alt="">
+                <p class="name">H.C</p>
+                <p class="number">강재원</p>
             </div>
             <div class="staff-photo">
                 <img src="img/신창호.png" class="profile" alt="">
+                <p class="name">C.H</p>
+                <p class="number">신창호</p>
             </div>
             <div class="staff-photo">
                 <img src="img/트레이너 박유진.png" class="profile" alt="">
+                <p class="name">TR</p>
+                <p class="number">박유진</p>
             </div>
         </div>
     </section>
     <section id="history">
         <div class="Introduction">
             <img src="img/구단소개.jpg" alt="">
-            <P class="Introduction-taxt">
-                핸드볼계의 강호인 부산시설공단은 베테랑 및 젊은 선수들이<br>
-                조화롭게 구성되어 강력한 체력과 색다르고 다양한 팀워크가 강점이다.
-            </P>
-            <p class="Introduction-taxt">
-                여러 국가대표 선수들과 타 구단에선 볼 수 없는 외국인 용병까지 더해진<br>
-                뛰어난 경기력으로 관중들의 마음을 사로잡고 있다.
-            </p>
-            <p class="Introduction-taxt">
-                부산시설공단은 유럽의 선진 핸드볼 시스템을 도입하여<br> 
-                여자 핸드볼의 최정상 자리에 올랐으며<br>
-                부산을 대표하는 스포츠 선수단으로써 끊임없이 활약하고 있다.
-            </p>
+            <div class="introduction-text-container">
+                <P class="Introduction-taxt">
+                    핸드볼계의 강호인 부산시설공단은 베테랑 및 젊은 선수들이<br>
+                    조화롭게 구성되어 강력한 체력과 색다르고 다양한 팀워크가 강점이다.
+                </P>
+                <p class="Introduction-taxt">
+                    여러 국가대표 선수들과 타 구단에선 볼 수 없는 외국인 용병까지 더해진<br>
+                    뛰어난 경기력으로 관중들의 마음을 사로잡고 있다.
+                </p>
+                <p class="Introduction-taxt">
+                    부산시설공단은 유럽의 선진 핸드볼 시스템을 도입하여<br> 
+                    여자 핸드볼의 최정상 자리에 올랐으며<br>
+                    부산을 대표하는 스포츠 선수단으로써 끊임없이 활약하고 있다.
+                </p>
+            </div>
         </div>
         <h4>주요입상</h4>
-        <div class="history-titel">
-            <h5>2018 - 2019</h5>
-            <h5>SK핸드볼코리아리그</h5>
-            <img src="img/2018-2019.jpg" alt="">
-            <p>정규리그</p>
-            <p class="grade">우승</p>
-        </div>
-        <div class="history-titel">
-            <h5>2019 - 2020</h5>
-            <h5>SK핸드볼코리아리그</h5>
-            <img src="img/19-20.jpg" alt="">
-            <p>정규리그</p>
-            <p class="grade">준우승</p>
-        </div>
-        <div class="2018history">
-            <h5>2020 - 2021</h5>
-            <h5>SK핸드볼코리아리그</h5>
-            <img src="img/2020-2021.jpg" alt="">
-            <p class="grade">통합우승</p>
-        </div>
-        <div class="2018history">
-            <h5>2021 - 2022</h5>
-            <h5>SK핸드볼코리아리그</h5>
-            <img src="img/2021-2022.PNG" alt="">
-            <p>정규리그</p>
-            <p class="grade">3위</p>
-        </div>
-        <div class="2018history">
-            <h5>2022 - 2023</h5>
-            <h5>SK핸드볼코리아리그</h5>
-            <img src="img/2022-2023.jpeg" alt="">
-            <p>정규리그</p><p class="grade">4위</p>
-            <p>포스트시즌</p><p class="grade">2위</p>
-        </div>
+
+        <ul class="history-title-wrapper">
+            <li class="history-title-content">
+                <h5>2018 - 2019</h5>
+                <h5>SK핸드볼코리아리그</h5>
+                <img src="img/2018-2019.jpg" alt="">
+                <div class="title-result">
+                    <p>정규리그</p>
+                    <p class="grade">우승</p>
+                </div>
+            </li>
+            <li class="history-title-content">
+                <h5>2019 - 2020</h5>
+                <h5>SK핸드볼코리아리그</h5>
+                <img src="img/19-20.jpg" alt="">
+                <div class="title-result">
+                    <p>정규리그</p>
+                    <p class="grade">준우승</p>
+                </div>
+            </li>
+            <li class="history-title-content">
+                <h5>2020 - 2021</h5>
+                <h5>SK핸드볼코리아리그</h5>
+                <img src="img/2020-2021.jpg" alt="">
+                <div class="title-result">
+                    <p class="grade">통합우승</p>
+                </div>
+            </li>
+            <li class="history-title-content">
+                <h5>2021 - 2022</h5>
+                <h5>SK핸드볼코리아리그</h5>
+                <img src="img/2021-2022.PNG" alt="">
+                <div class="title-result">
+                    <p>정규리그</p>
+                    <p class="grade">3위</p>
+                </div>
+            </li>
+            <li class="history-title-content">
+                <h5>2022 - 2023</h5>
+                <h5>SK핸드볼코리아리그</h5>
+                <img src="img/2022-2023.jpeg" alt="">
+                <div class="title-result">
+                    <p>정규리그</p><p class="grade">4위</p>
+                    <p>포스트시즌</p><p class="grade">2위</p>
+                </div>
+            </li>
+        </ul>
     </section>
     <section class="team-symbol">
         <!-- css백그라운드 이미지 깔아주기 -->
@@ -474,34 +567,38 @@
             <img src="img/메인ㄹ고.jpg" alt="">
             <img src="img/부산시설공단 로고.png" alt="">
         </div>
-        <div class="field">
-            <h6>부산Bisco 필드유니폼</h6>
-            <div class="black">
-                <img src="img/유니폼 검정.png" alt="">
-                <p>Black</p>
+
+        <div class="uniform">
+
+            <div class="field">
+                <h6>부산Bisco 필드유니폼</h6>
+                <div class="black">
+                    <img src="img/유니폼 검정.png" alt="">
+                    <p>Black</p>
+                </div>
+                <div class="white">
+                    <img src="img/유니폼 녹색.png" alt="">
+                    <p>White</p>
+                </div>
+                <div class="red">
+                    <img src="img/유니폼 빨강.png" alt="">
+                    <p>Rad</p>
+                </div>
             </div>
-            <div class="white">
-                <img src="img/유니폼 녹색.png" alt="">
-                <p>White</p>
-            </div>
-            <div class="red">
-                <img src="img/유니폼 빨강.png" alt="">
-                <p>Rad</p>
-            </div>
-        </div>
-        <div class="goalkeeper">
-            <h6>부산Bisco GK유니폼</h6>
-            <div class="gk-black">
-                <img src="img/키퍼유니폼 검정.png" alt="">
-                <p>Black</p>
-            </div>
-            <div class="gk-green">
-                <img src="img/키퍼유니폼 녹색.png" alt="">
-                <p>Green</p>
-            </div>
-            <div class="gk-blue">
-                <img src="img/키퍼유니폼 파랑.png" alt="">
-                <p>Blue</p>
+            <div class="goalkeeper">
+                <h6>부산Bisco GK유니폼</h6>
+                <div class="gk-black">
+                    <img src="img/키퍼유니폼 검정.png" alt="">
+                    <p>Black</p>
+                </div>
+                <div class="gk-green">
+                    <img src="img/키퍼유니폼 녹색.png" alt="">
+                    <p>Green</p>
+                </div>
+                <div class="gk-blue">
+                    <img src="img/키퍼유니폼 파랑.png" alt="">
+                    <p>Blue</p>
+                </div>
             </div>
         </div>
     </section>
@@ -519,8 +616,6 @@
             <div class="Sponsor-rogo">
                 <img src="img/서울석유로고.png" alt="">
             </div>
-        </div>
-        <div class="footer-rogo">
             <div class="Sponsor-rogo">
                 <img src="img/비티알로고.png" alt="">
             </div>

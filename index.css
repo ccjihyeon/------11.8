@@ -1,14 +1,30 @@
+@font-face {
+    font-family : 'giants-bold';
+    src : url(폰트/Giants-Bold.otf)
+  }
+@font-face {
+    font-family : 'giants-inline';
+    src : url(폰트/Giants-Inline.otf)
+  }
+@font-face {
+    font-family : 'giants-regular';
+    src : url(폰트/Giants-Regular.otf)
+  }
+body{
+    background-color: ;
+}
 header{
     display: flex;
     width: 100%;
-    height: 86px;
+    /* height: 86px; */
     padding: 0 32px;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
 }
 #header-contents{
-    width:100%;
+    width:1920px;
     display: flex;
     justify-content: space-between;
 }
@@ -69,6 +85,374 @@ header{
 .hambutton.active > span:last-child {
     transform: translate(-50%,-50%) rotate(-45deg)
 }
-.main-video{
+.main-vidio{
+    display: flex;
+    flex-direction: column;
+}
+video{
+    width: 1920px;
+    object-fit: contain;
+}
+.news{
+    width: 1920px;
+    height: 130px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;  
+    background-color: aliceblue ;
+}
+.news-titel{
+    color: #204776;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'giants-bold';
+    line-height: normal;
+    text-transform: uppercase;
 
 }
+.news-list{
+    display: flex;
+    padding: 14px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 62px;
+    align-self: stretch;
+}
+
+.news-list>a>p{
+    color: #262626;
+    font-family: 'giants-regular';
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+#game-schedule{
+    width: 1920px;
+    height: 963px;
+    display: flex;
+    background: #1D95EC;
+}
+.today-game-place{
+    display: flex;
+    width: 50%;
+    height: 963px;
+    background-repeat: no-repeat;
+    background-image: url(img/경기일정사진.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.today-game{
+    display: flex;
+    width: 700px;
+    height: 442px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border-radius: 16px;
+    background: rgba(16, 35, 59, 0.80);
+    animation: bounce-top-50 1s infinite;
+}
+.game-title{
+    color: #FFF;
+    text-align: center;
+    font-family: 'giants-bold';
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+}
+.day-and-time{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    color: #FFF;
+}
+.game-day{
+    color: #FFF;
+    text-align: center;
+    font-family: 'giants-regular';
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+}
+.game-time{
+    color: #FFF;
+    text-align: center;
+    font-family: 'giants-regular';
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+}
+.match-teams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 133px;
+}
+.match-teams > img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.match-teams > p{
+    color: #FFF;
+    text-align: center;
+    font-family: 'giants-bold';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.stadium-live{
+    color: #FFF;
+    text-align: center;
+    font-family: 'giants-regular';
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+}
+
+@keyframes bounce-top-50 {
+    0% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 1
+    }
+
+    24% {
+        opacity: 1
+    }
+
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+
+    65% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+
+    82% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+
+    93% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+
+    25%, 55%, 75%, 87% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1
+    }
+}
+.game-list{
+    display: flex;
+    height: 80%;
+    padding: 50px 24px;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+    gap: 60px;
+    border-radius: 16px;
+    background: rgba(13, 50, 94, 0.60);
+}
+h2{
+    color: #FFF8F8;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.heading-bold{
+    color: #FFF8F8;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.information{
+    width: 825px;
+    height: 51px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.schedule{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: #FFF8F8;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-items: center;
+}
+.team-score{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    padding-right: 0px;
+    align-items: center;
+    gap: 12px;
+}
+.team-match-left{
+    display: flex;
+    width: 181px;
+    height: 50px;
+    padding-right: 0px;
+    align-items: center;
+    gap: 12px;
+}
+.team-match-right{
+    display: flex;
+    width: 181px;
+    height: 50px;
+    padding-right: 0px;
+    align-items: center;
+    gap: 12px; 
+}
+.team-match-left > img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.team-match-right > img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.team-match-left > p{
+    color: #FFF8F8;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+}
+#players-page{
+    width: 1920px;
+    height: 965px;
+    align-content: center;
+    background: #204776;
+}
+h3{
+    color: #FFF;
+    text-align: center;
+    font-family: 'giants-bold';
+    font-size: 42px;
+    font-style: normal;
+    line-height: normal;
+    padding-top: 32px;
+}
+.players{
+    display: flex;
+    width: 1840px;
+    padding: 24px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 36px;
+    flex-wrap: wrap;
+}
+.player-profile{
+    width: 220px;
+    height: 220px;
+}
+.player-name{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: -6px;
+    color: #F5F5F5;
+    -webkit-text-stroke:1px #040404;
+}
+.player-name>p{
+    font-family: 'giants-regular';
+}
+.name{
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+}
+.player-number{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-family: 'giants-regular';
+    color: #f5f5f5;
+    -webkit-text-stroke: 1px #040404;
+}
+.number{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+}
+.profile-taxt{
+    width: 220px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    position: absolute;
+    transform: translateY(-120%);
+}
+.player-profile > img {
+    width: 220px;
+    height: 220px;
+}
+.Coaching-staff{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 24px;
+    justify-content: center;
+}
+.staff-profile > img{
+    width: 220px;
+    height: 220px;
+}
+.staff-profile > .profile-taxt{
+    display: flex;
+    width: 220px;
+    height: 34px;
+    padding: 0px 19px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'giants-regular';
+    color: #F5F5F5;
+    -webkit-text-stroke:1px #040404;
+}
+

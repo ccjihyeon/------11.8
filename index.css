@@ -132,16 +132,16 @@ video{
 }
 #game-schedule{
     width: 1920px;
-    height: 963px;
+    height: 100vh;
     display: flex;
     background: #1D95EC;
 }
 .today-game-place{
     display: flex;
     width: 50%;
-    height: 963px;
+    height: 100vh;
     background-repeat: no-repeat;
-    background-image: url(img/경기일정사진.jpg);
+    background-image:linear-gradient(13deg, #0000007a, #0000007a),url(img/경기일정사진.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -274,7 +274,14 @@ video{
         opacity: 1
     }
 }
+.game-list-page{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .game-list{
+    width: 866px;
     display: flex;
     height: 80%;
     padding: 50px 24px;
@@ -302,7 +309,6 @@ h2{
 .information{
     width: 825px;
     height: 51px;
-    flex-shrink: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -320,11 +326,10 @@ h2{
 }
 .team-score{
     display: flex;
-    width: 200px;
     height: 50px;
     padding-right: 0px;
     align-items: center;
-    gap: 12px;
+    gap: 32px;
 }
 .team-match-left{
     display: flex;
@@ -333,6 +338,13 @@ h2{
     padding-right: 0px;
     align-items: center;
     gap: 12px;
+    justify-content: flex-end;
+}
+.score-board{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .team-match-right{
     display: flex;
@@ -354,15 +366,36 @@ h2{
 }
 .team-match-left > p{
     color: #FFF8F8;
-    font-size: 16px;
-    font-style: normal;
-    line-height: normal;
+    font-size: 14px;
+    font-weight: bold;
+}
+.team-match-right > p{
+    color: #FFF8F8;
+    font-size: 14px;
+    font-weight: bold;
+}
+.place-score{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F5F5F5;
+    font-size: 12px;
 }
 #players-page{
     width: 1920px;
     height: 965px;
     align-content: center;
     background: #204776;
+}
+.live{
+    font-size: 12px;
+    color: #F5F5F5;
+}
+.game-list>a{
+    color: #F5F5F5;
+    font-size: 14px;
+    font-weight: bold;
 }
 h3{
     color: #FFF;
@@ -455,31 +488,68 @@ h3{
     color: #F5F5F5;
     -webkit-text-stroke:1px #040404;
 }
-.player-profile :hover {
+.player-profile:hover {
     cursor: pointer;
-    animation: profile-hover 1s infinite;
+    transform: scale(1.2);
+    transition: 0.4s;
 }
 .staff-profile:hover{
     cursor: pointer;
-    animation: profile-hover 1s infinite;
+    transform: scale(1.2);
+    transition: 0.4s;
 }
-
-@keyframes profile-hover { 
-    from {
-      width: 240px;
-      height: 240px;
-
-    }
-  }
-
-
+#history{
+    width:3828px;
+    height: 100vh;
+    background-color: #052952;
+}
+.Introduction{
+    display: flex;
+    width: 809px;
+    height: 963px;
+    flex-direction: column;
+    align-items: center;
+    gap: 69px;
+}
+.Introduction>img{
+    width: 100%;
+    height: 506px;
+}
+.introduction-text-container{
+    gap: 32px;
+}
+.Introduction-taxt{
+    color: #FFFDFD;
+    text-align: center;
+    font-family: 'giants-regular';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    padding: 14px;
+}
+h4{
+    color: #FFF;
+    text-align: center;
+    font-family: 'giants-bold';
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+}
+.history-title-wrapper{
+    display: flex;
+    width: 2789px;
+    height: 799px;
+    align-items: flex-start;
+    gap: 116px;
+}
 .team-symbol{
     width: 1920px;
     height: 960px;
     padding-top: 72px;
     display: flex;
     align-items:center;
-    background-image: url(img/유니폼뒷사진.jpg);
+    background-image: linear-gradient(13deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),url(img/유니폼뒷사진.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     background-color:#052952;    

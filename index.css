@@ -26,8 +26,9 @@ header{
     background-color: rgb(255, 255, 255);
 }
 #header-contents{
-    width:1920px;
+    width:100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .bisco-rogo{
@@ -94,18 +95,19 @@ section{
     overflow: hidden;
 }
 .main-vidio{
+    width: 100%;
     display: flex;
     flex-direction: column;
     height: 100vh;
     position: relative;
 }
 video{
-    width: 1920px;
+    width:100%;
     object-fit: contain;
 }
 .news{
-    width: 1920px;
-    height: 130px;
+    width: 100%;
+    height: 90px;
     padding: 0 16px;
     display: flex;
     justify-content: center;
@@ -123,7 +125,6 @@ video{
     font-family: 'giants-bold';
     line-height: normal;
     text-transform: uppercase;
-
 }
 .news-list{
     display: flex;
@@ -143,13 +144,12 @@ video{
     text-decoration-line: underline;
 }
 #game-schedule{
-    width: 1920px;
+    width: 100%;
     height: 100vh;
     display: flex;
     background: #1D95EC;
 }
 .today-game-place{
-    display: flex;
     width: 50%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -157,11 +157,12 @@ video{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 }
 .today-game{
     display: flex;
-    width: 700px;
-    height: 442px;
+    width: 70%;
+    height: 50%;
     padding: 32px;
     flex-direction: column;
     align-items: center;
@@ -205,11 +206,11 @@ video{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 133px;
+    gap: 56px;
 }
 .match-teams > img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
 }
 .match-teams > p{
@@ -253,43 +254,42 @@ video{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 }
 .game-list{
-    width: 866px;
+    width: 86%;
     display: flex;
-    height: 80%;
-    padding: 50px 24px;
+    height: 76%;
+    padding: 32px 16px;
     flex-direction: column;
     place-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 20px;
     border-radius: 16px;
     background: rgba(13, 50, 94, 0.60);
 }
 h2{
     color: #FFF8F8;
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 .heading-bold{
     color: #FFF8F8;
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 .information{
-    width: 825px;
-    height: 51px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .schedule{
     display: flex;
-    align-items: flex-start;
     gap: 12px;
     color: #FFF8F8;
     font-size: 14px;
@@ -322,7 +322,7 @@ h2{
 }
 .team-match-right{
     display: flex;
-    width: 181px;
+    width: 180px;
     height: 50px;
     padding-right: 0px;
     align-items: center;
@@ -357,10 +357,13 @@ h2{
     font-size: 12px;
 }
 #players-page{
-    width: 1920px;
+    width: 100%;
     height: 100vh;
-    align-content: center;
-    background: #204776;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to right,#1d95ec,#0e7ece,#096bb2,#065994,#044b7e, #03416c);
 }
 .live{
     font-size: 12px;
@@ -375,24 +378,26 @@ h3{
     color: #FFF;
     text-align: center;
     font-family: 'giants-bold';
-    font-size: 42px;
+    font-size: 26px;
     font-style: normal;
     line-height: normal;
     padding-top: 20px;
 }
 .players{
     display: flex;
-    width: 1840px;
-    padding: 24px;
+    width: 100%;
+    padding-top: 16px;
     align-items: center;
     align-content: center;
     justify-content: center;
-    gap: 36px;
+    gap: 32px;
     flex-wrap: wrap;
+    flex-shrink: 0;
 }
 .player-profile{
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
+    display: flex;
 }
 .player-name{
     display: inline-flex;
@@ -407,7 +412,7 @@ h3{
 }
 .name{
     text-align: center;
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     line-height: normal;
 }
@@ -422,48 +427,55 @@ h3{
 }
 .number{
     text-align: center;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 400;
 }
 .profile-taxt{
-    width: 220px;
+    width: 160px;
     display:flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 2px;
     position: absolute;
-    transform: translateY(-120%);
+    transform: translateY(220%);
+    justify-content: space-between;
 }
 .player-profile > img {
     width: 100%;
     height: 100%;
 }
 .staff-profile{
-    width: 180px;
+    width: 160px;
 }
 .Coaching-staff{
     display: flex;
     align-items: center;
     gap: 50px;
-    padding: 24px;
+    padding: 16px;
     justify-content: center;
 }
 .staff-profile > img{
     width: 100%;
     height: 100%;
 }
-.staff-profile > .profile-taxt{
+.staff-taxt{
+    width: 160px;
     display: flex;
-    width: 220px;
-    height: 34px;
-    padding: 0px 19px;
-    text-align: center;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+    gap: 2px;
+    position: absolute;
+    transform: translateY(-98%);
     font-family: 'giants-regular';
-    color: #F5F5F5;
-    -webkit-text-stroke:1px #040404;
+    color: #ffff;
+    -webkit-text-stroke: 1px #040404;
+}
+
+
+.staff-profile > p{
+    font-family: 'giants-regular';
 }
 .player-profile:hover {
     cursor: pointer;
@@ -484,30 +496,29 @@ h3{
 }
 .Introduction{
     display: flex;
-    width: 809px;
     height:100%;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
     flex-shrink: 0;
 }
 .Introduction>img{
     width: 100%;
-    height: 506px;
+    height: 56%;
     filter: brightness(0.5);
 }
 .introduction-text-container{
-    gap: 32px;
+    gap: 26px;
 }
 .Introduction-taxt{
     color: #FFFDFD;
     text-align: center;
     font-family: 'giants-regular';
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    padding: 14px;
+    padding-bottom: 14px;
 }
 .history-result{
     height: 100%;
@@ -519,14 +530,15 @@ h3{
 h4{
     color: #FFF;
     font-family: 'giants-bold';
-    font-size: 56px;
+    font-size: 42px;
     font-style: normal;
     font-weight: 400;
 }
 .history-title-wrapper{
     display: flex;
     width: 100%;
-    padding: 32px;
+    height: 100%;
+    padding-top: 22px;
     align-items: center;
     gap: 32px;
     box-sizing: border-box;
@@ -540,11 +552,11 @@ h4{
     display: flex;
     width: 100%;
     height: 100%;
-    padding: 32px 0px;
+    padding: 16px 0px;
     box-sizing: border-box;
     flex-direction: column;
     align-items: center;
-    gap: 66px;
+    gap: 26px;
     border-radius: 16px;
     background: rgba(29, 149, 236, 0.43);
 }
@@ -557,16 +569,14 @@ h5{
     color: #FFFDFD;
     text-align: center;
     font-family: 'giants-bold';
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 203.023%; 
 }
 .history-img{
     width: 100%;
-    height: 349px;
-    left: 0.5px;
-    top: 106px;
+    height: 45%;
     object-fit: cover;
 }
 .title-result{
@@ -577,18 +587,18 @@ h5{
     gap: 16px;
     color: #F5F5F5;
     font-family: 'giants-regular';
-    font-size: 32px;
+    font-size: 26px;
 }
 
 .grade{
-    font-size: 52px;
+    font-size: 30px;
     font-family: 'giants-bold';
 }
 .team-symbol{
-    width: 1920px;
-    height: 100vh;
-    padding-top: 72px;
+    width: 100%;
+    padding-top: 107px;
     display: flex;
+    justify-content: center;
     align-items:center;
     background-image: linear-gradient(13deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),url(img/유니폼뒷사진.jpg);
     background-repeat:no-repeat;
@@ -601,12 +611,11 @@ h6{
     color: #121212;
     text-align: center;
     font-family: 'giants-inline';
-    font-size: 32px;
+    font-size: 24px;
 }
 .cl{
     display: flex;
-    height: 387px;
-    padding: 32px;
+    padding: 16px;
     flex-direction: column;
     align-items: center;
     border-radius: 16px;
@@ -614,30 +623,27 @@ h6{
 }
 .cl-rogo{
     display: flex;
-    height: 296px;
-    justify-content: center;
     align-items: center;
     gap: 58px;
 }
 .cl-rogo > img {
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
     object-fit:contain;
 }
 .uniform{
     display: flex;
-    padding: 10px 32px 0px 32px;
+    padding: 10px 32px 16px 32px;
     align-items: flex-start;
-    gap: 60px;
+    gap: 50px;
 }
 .field{
     display: flex;
-    height: 410px;
-    padding: 0px 24px;
+    padding: 16px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 10px;
     border-radius: 16px;
     background-color: rgba(255, 255, 255, 0.50);
 }
@@ -675,17 +681,23 @@ h6{
 }
 footer{
     width: 100%;
-    height: 100vh;
+    padding-top:91px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 98px;
+    box-sizing: border-box;
+    gap:62px;
     background-color: #052952;
+    flex-shrink: 0;
+}
+.sponsor{
+    display: flex;
+    gap: 32px;
 }
 .footer-rogo{
     display: flex;
-    width: 1049px;
+    width: 100%;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -694,12 +706,14 @@ footer{
 }
 .Sponsor-rogo{
     background-color: #FFF8F8;
+    width: 200px;
+    height: 150px;
     padding: 16px;
     border-radius: 16px;
 }
 .Sponsor-rogo>img{
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 .footer-text{
